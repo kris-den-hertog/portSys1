@@ -4,14 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/global.css">
-    <title>home - Kris den Hertog</title>
+    <title>Portfolio - Kris den Hertog</title>
 </head>
 <body>
     <nav>
-
+        <a href="#" class="link">LinkedIn</a>
+        <a href="#" class="link">X (twitter)</a>
+        <a href="#" class="link">Instagram</a>
     </nav>
     <main>
-
+        <div class="folderContainer">
+            <div class="folder" id="projects">
+                <img class="folderImg" src="img/folderNonSel.png">
+                <div class="folderName">Projects</div>
+              </div>
+              <div class="folder" id="contact">
+                <img class="folderImg" src="img/folderNonSel.png">
+                <div class="folderName">Contact.</div>
+              </div>
+        </div>
     </main>
+    <script>
+   document.addEventListener("DOMContentLoaded", function () {
+            const folders = document.querySelectorAll(".folder");
+            
+            folders.forEach(function (folder) {
+                const folderImg = folder.querySelector(".folderImg");
+                const folderName = folder.querySelector(".folderName");
+                let isSelected = false;
+
+                folder.addEventListener("click", function () {
+                    if (!isSelected) {
+                        folderImg.src = "img/folderSel.png";
+                        folderName.classList.add("selected");
+                    } else {
+                        folderImg.src = "img/folderNonSel.png";
+                        folderName.classList.remove("selected");
+                    }
+                    isSelected = !isSelected;
+                });
+            });
+        });
+        
+    </script>
 </body>
 </html>
