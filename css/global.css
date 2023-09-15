@@ -9,6 +9,7 @@ body {
     overflow: hidden;
     background-color: black;
     cursor: url(../img/select.cur), auto;
+    font-family: main;
 }
 
 nav {
@@ -21,10 +22,10 @@ nav {
 
 }
 
-main {
+#main {
     width: 100%;
     height: 95vh;
-    background-image: url("../img/check.png");
+    background-image: url("../img/default.png");
 
 }
 #menuButton {
@@ -33,6 +34,7 @@ main {
     width: auto;
     margin-left: 10px;
     margin-right: 25px;
+    cursor: pointer;
 }
 
 .link {
@@ -104,7 +106,7 @@ main {
     margin-top: 6vh;
     border-radius: 1px;
     position: absolute;
-    border: .3vw solid black;
+    border: .3vw double black;
     text-align: center;
 }
 #contactWindow {
@@ -116,7 +118,7 @@ main {
     margin-top: 40vh;
     border-radius: 1px;
     position: absolute;
-    border: .3vw solid black;
+    border: .3vw double black;
     text-align: center;
 }
 #menuWindow {
@@ -128,7 +130,7 @@ main {
     margin-top: vh;
     border-radius: 1px;
     position: absolute;
-    border: .3vw solid black;
+    border: .3vw double black;
     text-align: center;
 }
 #projectTitle, #contactTitle {
@@ -137,5 +139,30 @@ main {
     margin-left: 5%;
     margin-top: 5%;
     height: auto;
-    border: .3vw solid black;
+    border: .3vw double black;
+}
+.file {
+    height: 8vh;
+    width: auto;
+    float: left;
+}
+.fileText {
+    font-family: main;
+    font-size: 13px;
+
+}
+.projectContainer {
+    width: 90%;
+    height: 20vh;
+    margin-top: 2.5vh;
+    margin-left: 5%;
+    border: .3vw double black;
+}
+#am {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#che, #def {
+    cursor: pointer;
 }

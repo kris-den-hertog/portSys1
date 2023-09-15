@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 501.27 516.04">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: #39b54a;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 459.98px;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #006837;
+      }
+
+      .cls-5 {
+        font-size: 12px;
+      }
+
+      .cls-4 {
+        stroke: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="239.07" y1="263.15" x2="261.93" y2="263.15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#009245"/>
+      <stop offset="1" stop-color="#006837"/>
+    </linearGradient>
+  </defs>
+  <g id="background">
+    <rect class="cls-1" x=".5" y="15.54" width="500" height="500"/>
+  </g>
+  <g id="Layer_2" data-name="Layer 2">
+    <text class="cls-5" transform="translate(108.36 156.72)"><tspan x="0" y="0">&gt;</tspan></text>
+    <text/>
+    <text class="cls-2" transform="translate(.5 385.51) scale(.87 1)"><tspan x="0" y="0">&gt;</tspan></text>
+    <text class="cls-3" transform="translate(261.43 385.51) scale(.87 1)"><tspan x="0" y="0">&lt;</tspan></text>
+    <rect class="cls-4" x="239.57" y="140.8" width="21.85" height="244.71"/>
+  </g>
+</svg>
