@@ -22,6 +22,29 @@
 
     }
 }
+@keyframes menuWindowOpenR {
+    0% {
+        width: 100vw;
+        height: 1vh;
+    }
+
+    100% {
+        width: 100vw;
+        height: 95vh;
+    }
+}
+@keyframes menuWindowCloseR {
+    0% {
+        width: 100vw;
+        height: 95vh;
+    }
+
+    100% {
+        width: 100vw;
+        height: 1vh;
+
+    }
+}
 
 @keyframes projectWindowOpen {
     0% {
@@ -86,3 +109,24 @@
     
 
 }
+@media (max-width: 800px) {
+
+    .open-menuWindow {
+        animation-name: menuWindowOpenR;
+        animation-duration: .6s;
+        animation-timing-function: steps(5);
+        animation-fill-mode: forwards;
+        display: block;
+    
+    }
+    .close-menuWindow {
+        animation-name: menuWindowCloseR;
+        animation-duration: .6s;
+        animation-timing-function: steps(5);
+        animation-fill-mode: forwards;
+        display: block;
+        
+    
+    }
+    
+    }

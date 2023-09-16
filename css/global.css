@@ -60,6 +60,7 @@ nav {
 
 .folder {
     display: flex;
+    margin: 0;
     position: relative;
     flex-direction: column-reverse;
     float: right;
@@ -130,7 +131,6 @@ nav {
     width: 40vw;
     height: 50vh;
     margin-left: 30vw;
-    margin-top: vh;
     border-radius: 1px;
     position: absolute;
     border: .3vw double black;
@@ -178,5 +178,64 @@ nav {
 #def,
 #gre {
     cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+    .folderContainer {
+        display: flex;
+        flex-direction: row;
+        float: none;
+        width: 100vw;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        position: relative; /* Add this to create a stacking context */
+        z-index: 1; /* Add this to ensure the folders are behind the menuWindow */
+    }
+    
+    .folder {
+        margin: 5vw;
+    }
+    
+    #menuWindow {
+        width: 100vw;
+        height: 95vh;
+        margin: 0;
+        border: .7vw double black;
+        position: absolute; /* Use absolute positioning to overlay on top of folderContainer */
+        top: 5vh;
+        z-index: 2; /* Set a higher z-index to ensure it's above folderContainer */
+    }
+    nav {
+        z-index: 3;
+    }
+    
+.link {
+    position: relative;
+    font-family: main;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-left: 20px;
+    font-size: 2vh;
+    vertical-align: center;
+}
+.backButton {
+    font-size: 6vw;
+    text-decoration: underline;
+}
+#cbg {
+    font-size: 8vw;
+    margin-top: 10vh;
+}
+.text {
+    font-size: 6vw;
+}
+#menuTitle {
+    font-size: 5vw;
+}
+
+
 }
 
