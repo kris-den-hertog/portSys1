@@ -1,0 +1,88 @@
+@keyframes menuWindowOpen {
+    0% {
+        width: 40vw;
+        height: 2vh;
+    }
+
+    100% {
+        width: 40vw;
+        height: 50vh;
+    }
+}
+
+@keyframes menuWindowClose {
+    0% {
+        width: 40vw;
+        height: 50vh;
+    }
+
+    100% {
+        width: 40vw;
+        height: 2vh;
+
+    }
+}
+
+@keyframes projectWindowOpen {
+    0% {
+        width: 15px;
+        height: 10px;
+    }
+
+    100% {
+        width: 40vw;
+        height: 40vh;
+    }
+}
+
+@keyframes projectWindowClose {
+    0% {
+        width: 40vw;
+        height: 40vh;
+    }
+
+    100% {
+        width: 15px;
+        height: 10px;
+
+    }
+}
+
+.open-projectWindow {
+    animation-name: projectWindowOpen;
+    animation-duration: .6s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: forwards;
+    display: block;
+
+}
+
+.close-projectWindow {
+    animation-name: projectWindowClose;
+    animation-duration: .6s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: forwards;
+    display: block;
+    
+
+}
+
+
+.open-menuWindow {
+    animation-name: menuWindowOpen;
+    animation-duration: .6s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: forwards;
+    display: block;
+
+}
+
+.close-menuWindow {
+    animation-name: menuWindowClose;
+    animation-duration: .6s;
+    animation-timing-function: steps(5);
+    animation-fill-mode: forwards;
+    display: block;
+    
+
+}
