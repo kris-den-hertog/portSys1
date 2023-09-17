@@ -280,4 +280,11 @@ nav {
 }
 
 }
-
+@media (max-width: 500px) {
+    .link {
+        font-size: 2vh;
+    }
+    #linkContainer {
+        margin-top: 1.5vh;
+    }
+}
