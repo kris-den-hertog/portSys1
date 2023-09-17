@@ -190,8 +190,8 @@ nav {
         height: auto;
         text-align: center;
         justify-content: center;
-        position: relative; /* Add this to create a stacking context */
-        z-index: 1; /* Add this to ensure the folders are behind the menuWindow */
+        position: relative; 
+        z-index: 1; 
     }
     
     .folder {
@@ -203,12 +203,16 @@ nav {
         height: 95vh;
         margin: 0;
         border: .7vw double black;
-        position: absolute; /* Use absolute positioning to overlay on top of folderContainer */
+        position: absolute; 
         top: 5vh;
-        z-index: 2; /* Set a higher z-index to ensure it's above folderContainer */
+        z-index: 2; 
     }
     nav {
         z-index: 3;
+    }
+    #linkContainer {
+        text-align: center;
+        margin-top: 1vh;
     }
     
 .link {
@@ -218,8 +222,7 @@ nav {
     text-decoration: none;
     font-weight: bolder;
     margin-left: 20px;
-    font-size: 2vh;
-    vertical-align: center;
+    font-size: 3vh;
 }
 .backButton {
     font-size: 6vw;
@@ -236,6 +239,45 @@ nav {
     font-size: 5vw;
 }
 
+#projectWindow {
+    width: 50vw;
+    height: 40vh;
+    margin-left: 5vw;
+    margin-top: 30vh;
+    border-radius: 1px;
+    position: absolute;
+    border: .3vw double black;
+    text-align: center;
+}
+
+#contactWindow {
+    width: 50vw;
+    height: 40vh;
+    margin-top: 50vh;
+    margin-left: 45vw;
+ 
+    border-radius: 1px;
+    position: absolute;
+    border: .3vw double black;
+    text-align: center;
+}
+#projectTitle,
+#contactTitle {
+    font-family: main;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: auto;
+    font-size: 2.7vw;
+    border: .3vw double black;
+}
+#menuButton {
+    height: 5vh;
+    width: auto;
+   float: left;
+   
+    cursor: pointer;
+}
 
 }
 
