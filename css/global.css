@@ -31,11 +31,15 @@ nav {
 
 #menuButton {
     position: absolute;
-    height: 5vh;
+    height: 3vh;
     width: auto;
     margin-left: 10px;
     margin-right: 25px;
+    margin-top: 1vh;
     cursor: pointer;
+}
+#linkContainer {
+    margin-left: 2vw;
 }
 
 .link {
@@ -181,7 +185,7 @@ nav {
 }
 
 
-@media (max-width: 800px) {
+@media ( max-width: 800px) {
     .folderContainer {
         display: flex;
         flex-direction: row;
@@ -272,7 +276,7 @@ nav {
     border: .3vw double black;
 }
 #menuButton {
-    height: 5vh;
+    height: 3vh;
     width: auto;
    float: left;
    
