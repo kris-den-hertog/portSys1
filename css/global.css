@@ -156,6 +156,9 @@ nav {
     height: 8vh;
     width: auto;
     float: left;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }
 
 .fileText {
@@ -169,14 +172,15 @@ nav {
     height: 20vh;
     margin-top: 2.5vh;
     margin-left: 5%;
+    text-align: center;
     border: .3vw double black;
 }
 
-#am {
-    float: left;
-    margin-left: 20px;
-    margin-top: 10px;
+#am, #fc {
+   display: flex;
+   flex-direction: column;
 }
+
 
 #che,
 #def,
