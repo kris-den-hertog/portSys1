@@ -22,6 +22,7 @@
 
     }
 }
+
 @keyframes menuWindowOpenR {
     0% {
         width: 100vw;
@@ -33,6 +34,7 @@
         height: 95vh;
     }
 }
+
 @keyframes menuWindowCloseR {
     0% {
         width: 100vw;
@@ -52,7 +54,7 @@
         height: 10px;
         margin-left: 90vw;
     }
-   
+
 
     100% {
         width: 40vw;
@@ -75,14 +77,51 @@
 
     }
 }
+
+@keyframes projectWindowOpenR {
+    0% {
+        width: 15px;
+        height: 10px;
+        margin-left: 35vw;
+        margin-top: 10vh;
+    }
+
+
+    100% {
+        width: 50vw;
+        height: 40vh;
+        margin-left: 5vw;
+        margin-top: 30vh;
+    }
+}
+
+@keyframes projectWindowCloseR {
+    0% {
+        width: 50vw;
+        height: 40vh;
+        margin-left: 5vw;
+        margin-top: 30vh;
+    }
+
+    100% {
+        width: 15px;
+        height: 10px;
+        margin-left: 35vw;
+        margin-top: 10vh;
+
+
+
+    }
+}
+
 @keyframes contactWindowOpen {
     0% {
         width: 15px;
         height: 10px;
-      margin-top: 27vh;
-      margin-left: 90vw;
+        margin-top: 27vh;
+        margin-left: 90vw;
     }
-   
+
 
     100% {
         width: 40vw;
@@ -98,7 +137,7 @@
         height: 40vh;
         margin-left: 34vw;
         margin-top: 40vh;
-       
+
     }
 
     100% {
@@ -106,6 +145,41 @@
         height: 10px;
         margin-top: 27vh;
         margin-left: 90vw;
+
+    }
+}
+
+@keyframes contactWindowOpenR {
+    0% {
+        width: 15px;
+        height: 10px;
+        margin-top: 10vh;
+        margin-left: 70vw;
+    }
+
+
+    100% {
+        width: 50vw;
+        height: 40vh;
+        margin-top: 50vh;
+        margin-left: 45vw;
+    }
+}
+
+@keyframes contactWindowCloseR {
+    0% {
+        width: 50vw;
+        height: 40vh;
+        margin-top: 50vh;
+        margin-left: 45vw;
+
+    }
+
+    100% {
+        width: 15px;
+        height: 10px;
+        margin-top: 10vh;
+        margin-left: 70vw;
 
     }
 }
@@ -125,9 +199,10 @@
     animation-timing-function: steps(7);
     animation-fill-mode: forwards;
     display: block;
-    
+
 
 }
+
 .open-contactWindow {
     animation-name: contactWindowOpen;
     animation-duration: .6s;
@@ -143,7 +218,7 @@
     animation-timing-function: steps(7);
     animation-fill-mode: forwards;
     display: block;
-    
+
 
 }
 
@@ -163,9 +238,10 @@
     animation-timing-function: steps(5);
     animation-fill-mode: forwards;
     display: block;
-    
+
 
 }
+
 @media (max-width: 800px) {
 
     .open-menuWindow {
@@ -174,16 +250,56 @@
         animation-timing-function: steps(5);
         animation-fill-mode: forwards;
         display: block;
-    
+
     }
+
     .close-menuWindow {
         animation-name: menuWindowCloseR;
         animation-duration: .6s;
         animation-timing-function: steps(5);
         animation-fill-mode: forwards;
         display: block;
-        
-    
+
+
     }
-    
+
+    .open-projectWindow {
+        animation-name: projectWindowOpenR;
+        animation-duration: .6s;
+        animation-timing-function: steps(7);
+        animation-fill-mode: forwards;
+        display: block;
+
     }
+
+    .close-projectWindow {
+        animation-name: projectWindowCloseR;
+        animation-duration: .6s;
+        animation-timing-function: steps(7);
+        animation-fill-mode: forwards;
+        display: block;
+
+
+    }
+
+    .open-contactWindow {
+        animation-name: contactWindowOpenR;
+        animation-duration: .6s;
+        animation-timing-function: steps(7);
+        animation-fill-mode: forwards;
+        display: block;
+
+    }
+
+    .close-contactWindow {
+        animation-name: contactWindowCloseR;
+        animation-duration: .6s;
+        animation-timing-function: steps(7);
+        animation-fill-mode: forwards;
+        display: block;
+
+
+    }
+
+
+}
