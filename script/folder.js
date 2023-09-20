@@ -50,21 +50,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     cc.style.display = "none";
                     ct.style.display = "none";
                     contactWindow.style.display = "block";
-                    contactWindow.classList.add('open-projectWindow');
+                    contactWindow.classList.add('open-contactWindow');
                     setTimeout(function () {
                         ct.style.display = "block";
                         cc.style.display = "block";
-                        contactWindow.classList.remove('open-projectWindow'); 
+                        contactWindow.classList.remove('open-contactWindow'); 
                     }, 700);
 
                 } else {
                     cc.style.display = "none";
                     ct.style.display = "none";
                     contactWindow.style.display = "block";
-                    contactWindow.classList.add('close-projectWindow');
+                    contactWindow.classList.add('close-contactWindow');
                     setTimeout(function () {
                         contactWindow.style.display = "none";
-                        contactWindow.classList.remove('close-projectWindow'); 
+                        contactWindow.classList.remove('close-contactWindow'); 
                     }, 700);
                
                 }
