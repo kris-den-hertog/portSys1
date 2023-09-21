@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Text-to-Speech Form</title>
+</head>
+<body>
+    <h1>Text-to-Speech Form</h1>
+
+    <form id="textToSpeechForm">
+        <label for="text">Enter Text:</label>
+        <input type="text" id="text" name="text" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p>Text-to-Speech Output:</p>
+    <div id="output"></div>
+
+    <script>
+        const form = document.getElementById('textToSpeechForm');
+        const textInput = document.getElementById('text');
+        const outputDiv = document.getElementById('output');
+        const synth = window.speechSynthesis;
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const text = textInput.value;
+
+            if (synth.speaking) {
+                synth.cancel(); 
+            }
+
+            const utterance = new SpeechSynthesisUtterance(text);
+
+            utterance.addEventListener('end', () => {
+                console.log('Speech synthesis finished.');
+            });
+
+            utterance.addEventListener('error', (err) => {
+                console.error('Speech synthesis error:', err);
+            });
+
+            synth.speak(utterance);
+
+           
+        });
+    </script>
+</body>
+</html>

@@ -135,7 +135,7 @@ nav {
     display: none;
     background-color: rgb(228, 228, 228);
     width: 40vw;
-    height: 50vh;
+    height: 53vh;
     margin-left: 30vw;
     border-radius: 1px;
     position: absolute;
@@ -182,6 +182,7 @@ nav {
 .projectContainer {
     display: flex;
     flex-direction: column;
+    overflow: scroll;
     width: 90%;
     height: 20vh;
     margin-top: 2.5vh;
@@ -246,15 +247,15 @@ nav {
     font-size: 3vh;
 }
 .backButton {
-    font-size: 6vw;
+    font-size: 5vw;
     text-decoration: underline;
 }
 #cbg {
-    font-size: 8vw;
+    font-size: 6vw;
     margin-top: 10vh;
 }
 .text {
-    font-size: 6vw;
+    font-size: 4vw;
 }
 #menuTitle {
     font-size: 5vw;
