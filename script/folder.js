@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const pc = document.getElementById("projectContainer");
     const mt = document.getElementById("menuTitle");
     const mc = document.getElementById("menuContainer");
+    const tts = document.getElementById("tts"); 
+    const ttsX = document.getElementById("ttsX");
+    const ttsWindow = document.getElementById("ttsWindow"); 
+    let isTtsWindowVisible = false;
     let isProjectWindowVisible = false;
     let isContactWindowVisible = false;
     let isMenuWindowVisible = false;
@@ -105,6 +109,19 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 700);
         }
         isMenuWindowVisible = !isMenuWindowVisible;
+    });
+
+    tts.addEventListener("click", function () {
+        if (!isTtsWindowVisible) {
+            ttsWindow.style.display = "block";
+        } else {
+            ttsWindow.style.display = "none";
+        }
+        isTtsWindowVisible = !isTtsWindowVisible;
+    });
+    ttsX.addEventListener("click", function () {
+        ttsWindow.style.display = "none";
+        isTtsWindowVisible = false;
     });
 });
 

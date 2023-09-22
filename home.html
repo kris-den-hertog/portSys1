@@ -41,7 +41,23 @@
                 </div>
             </div>
         </div>
-      
+        <div id="ttsWindow">
+            <div id="ttsX"></div>
+            <div id="ttsTitle">
+                <h1 class="title" id="tTitle">Text To Speech</h1>
+            </div>
+            <div class="projectContainer" id="ttsContainer">
+                <form id="textToSpeechForm">
+                    <textarea id="text" name="text" placeholder="hello world">
+
+                    </textarea>
+                   
+                    <button type="submit" id="speak">Speak</button>
+                </form>
+               
+                </div>
+            </div>
+        </div>
 
         <div class="folderContainer">
             <div class="folder" id="projects">
@@ -87,5 +103,6 @@
     <script src="script/folder.js"> </script>
     <script src="script/file.js"> </script>
     <script src="script/background.js"> </script>
+    <script src="script/tts.js"> </script>
 </body>
 </html>

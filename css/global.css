@@ -38,6 +38,7 @@ nav {
     margin-top: 1vh;
     cursor: pointer;
 }
+
 #linkContainer {
     margin-left: 2vw;
 }
@@ -131,6 +132,30 @@ nav {
     box-shadow: 1vw 1vw;
 }
 
+#ttsWindow {
+    display: none;
+    background-color: rgb(228, 228, 228);
+    width: 40vw;
+    height: 40vh;
+    margin-left: 40vw;
+    margin-top: 10vh;
+    border-radius: 1px;
+    position: absolute;
+    border: .3vw double black;
+    text-align: center;
+    box-shadow: 1vw 1vw;
+}
+
+#ttsX {
+    margin-top: .5vh;
+    margin-left: .5vh;
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    border: .3vw double black;
+    float: left;
+}
+
 #menuWindow {
     display: none;
     background-color: rgb(228, 228, 228);
@@ -145,13 +170,51 @@ nav {
 
 #projectTitle,
 #contactTitle,
-#menuTitle {
+#menuTitle,
+#ttsTitle {
     font-family: main;
     width: 90%;
     margin-left: 5%;
     margin-top: 5%;
     height: auto;
     border: .3vw double black;
+}
+
+#tts {
+    cursor: pointer;
+}
+
+#textToSpeechForm {
+    display: flex;
+    flex-direction: row;
+}
+
+#text {
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 2.5vh;
+    resize: none;
+    height: 14vh;
+    border: .3vw double black;
+    font-family: main;
+    background-color: rgb(228, 228, 228);
+}
+
+::placeholder {
+    font-family: main;
+
+}
+
+#speak {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: main;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    border: .3vw double white;
 }
 
 .file {
@@ -163,6 +226,7 @@ nav {
     margin-left: 1vw;
     cursor: pointer;
 }
+
 .fileText {
     font-size: 3vh;
     margin-top: auto;
@@ -177,7 +241,7 @@ nav {
     height: 10vh;
     cursor: pointer;
     border-bottom: .3vw double black;
- }
+}
 
 .projectContainer {
     display: flex;
@@ -191,11 +255,6 @@ nav {
     border: .3vw double black;
 }
 
-
-
-
-
-
 #che,
 #def,
 #gre {
@@ -203,7 +262,7 @@ nav {
 }
 
 
-@media ( max-width: 800px) {
+@media (max-width: 800px) {
     .folderContainer {
         display: flex;
         flex-direction: row;
@@ -212,107 +271,166 @@ nav {
         height: auto;
         text-align: center;
         justify-content: center;
-        position: relative; 
-        z-index: 1; 
+        position: relative;
+        z-index: 1;
     }
-    
+
     .folder {
         margin: 5vw;
     }
-    
+
     #menuWindow {
         width: 100vw;
         height: 95vh;
         margin: 0;
         border: .7vw double black;
-        position: absolute; 
+        position: absolute;
         top: 5vh;
-        z-index: 2; 
+        z-index: 2;
     }
+
     nav {
         z-index: 3;
     }
+
     #linkContainer {
         text-align: center;
         margin-top: 1vh;
     }
+
+    .link {
+        position: relative;
+        font-family: main;
+        color: black;
+        text-decoration: none;
+        font-weight: bolder;
+        margin-left: 20px;
+        font-size: 3vh;
+    }
+
+    .backButton {
+        font-size: 5vw;
+        text-decoration: underline;
+    }
+
+    #cbg {
+        font-size: 6vw;
+        margin-top: 10vh;
+    }
+
+    .text {
+        font-size: 4vw;
+    }
+
+    #menuTitle {
+        font-size: 5vw;
+    }
+
+    #projectWindow {
+        width: 50vw;
+        height: 40vh;
+        margin-left: 5vw;
+        margin-top: 30vh;
+        border-radius: 1px;
+        position: absolute;
+        border: .3vw double black;
+        text-align: center;
+    }
+
+    #contactWindow {
+        width: 50vw;
+        height: 40vh;
+        margin-top: 50vh;
+        margin-left: 45vw;
+        border-radius: 1px;
+        position: absolute;
+        border: .3vw double black;
+        text-align: center;
+    }
+
+    #projectTitle,
+    #contactTitle {
+        font-family: main;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+        height: auto;
+        font-size: 2.7vw;
+        border: .3vw double black;
+    }
+
+    #menuButton {
+        height: 3vh;
+        width: auto;
+        float: left;
+
+        cursor: pointer;
+    }
+    #textToSpeechForm {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
     
-.link {
-    position: relative;
-    font-family: main;
-    color: black;
-    text-decoration: none;
-    font-weight: bolder;
-    margin-left: 20px;
-    font-size: 3vh;
-}
-.backButton {
-    font-size: 5vw;
-    text-decoration: underline;
-}
-#cbg {
-    font-size: 6vw;
-    margin-top: 10vh;
-}
-.text {
-    font-size: 4vw;
-}
-#menuTitle {
-    font-size: 5vw;
-}
+    #text {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        resize: none;
+        height: 14vh;
+        border: .3vw double black;
+        font-family: main;
+        background-color: rgb(228, 228, 228);
+    }
+    #ttsWindow {
+        display: none;
+        background-color: rgb(228, 228, 228);
+        width: 40vw;
+        height: 37vh;
+        margin-left: 40vw;
+        margin-top: 10vh;
+        border-radius: 1px;
+        position: absolute;
+        border: .3vw double black;
+        text-align: center;
+        box-shadow: 1vw 1vw;
+        z-index: 3;
+    }
+    #ttsContainer {
+        height: 23vh;
+    }
+    #speak {
+        margin-top: 1vh;
+        width: 50%;
+       
+    }
+    #tTitle {
+        font-size: 3.5vw;
+    }
 
-#projectWindow {
-    width: 50vw;
-    height: 40vh;
-    margin-left: 5vw;
-    margin-top: 30vh;
-    border-radius: 1px;
-    position: absolute;
-    border: .3vw double black;
-    text-align: center;
-}
-
-#contactWindow {
-    width: 50vw;
-    height: 40vh;
-    margin-top: 50vh;
-    margin-left: 45vw;
-    border-radius: 1px;
-    position: absolute;
-    border: .3vw double black;
-    text-align: center;
-}
-#projectTitle,
-#contactTitle {
-    font-family: main;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 5%;
-    height: auto;
-    font-size: 2.7vw;
-    border: .3vw double black;
-}
-#menuButton {
-    height: 3vh;
-    width: auto;
-   float: left;
-   
-    cursor: pointer;
-}
 
 }
+
 @media (max-width: 500px) {
     .link {
         font-size: 2vh;
     }
+
     #linkContainer {
         margin-top: 1.5vh;
     }
+
     .fileText {
         font-size: 3vh;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 6vw;
         font-size: 2vh;
+    }
+    #tTitle {
+        font-size: 3vw;
     }
 }
