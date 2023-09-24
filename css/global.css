@@ -270,7 +270,7 @@ nav {
     #mobile {
         display: block;
         width: 100vw;
-        height: 100vh;
+        height: 95vh;
         z-index: 10;
         font-family: main;
         font-size: 3vw;
