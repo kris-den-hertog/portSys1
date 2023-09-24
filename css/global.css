@@ -28,6 +28,9 @@ nav {
     background-image: url("../img/default.png");
 
 }
+#mobile {
+    display: none;
+}
 
 #menuButton {
     position: absolute;
@@ -263,6 +266,25 @@ nav {
 
 
 @media (max-width: 800px) {
+
+    #mobile {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        z-index: 6;
+        font-family: main;
+        font-size: 3vw;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    #sorry {
+        font-size: 10vw;
+    }
+    #menuButton {
+        display: none;
+    }
+  
     .folderContainer {
         display: flex;
         flex-direction: row;
