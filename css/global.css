@@ -8,8 +8,8 @@ body {
     scroll-behavior: smooth;
     overflow: hidden;
     background-color: black;
-    cursor: url(../img/select.cur), auto;
     font-family: main;
+    cursor: url(main.cur),auto;
 }
 
 nav {
@@ -26,6 +26,7 @@ nav {
     width: 100%;
     height: 95vh;
     background-image: url("../img/default.png");
+    cursor: url(/main.cur),auto;
 
 }
 #mobile {
@@ -116,6 +117,7 @@ nav {
     margin-top: 6vh;
     border-radius: 1px;
     position: absolute;
+    cursor: grab;
     border: .3vw double black;
     text-align: center;
     box-shadow: 1vw 1vw;
@@ -131,6 +133,7 @@ nav {
     margin-top: 40vh;
     border-radius: 1px;
     position: absolute;
+    cursor: grab;
     border: .3vw double black;
     text-align: center;
     box-shadow: 1vw 1vw;
@@ -264,13 +267,18 @@ nav {
 .projectContainer {
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     width: 90%;
     height: 20vh;
     margin-top: 2.5vh;
     margin-left: 5%;
     text-align: center;
     border: .3vw double black;
+}
+#menuWindow {
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #che,
@@ -282,34 +290,7 @@ nav {
 
 @media (max-width: 800px) {
 
-    #mobile {
-        display: block;
-        width: 100vw;
-        height: 95vh;
-        z-index: 10;
-        font-family: main;
-        font-size: 3vw;
-        background-color: black;
-        color: white;
-        text-align: center;
-    }
-    .folder {
-        display: none;
-    }
-    #sorry {
-        font-size: 15vw;
-        margin-bottom: 15vh;
-        margin-top: 15vh;
-    }
-    #git {
-        text-decoration: underline;
-        color: white;
-        font-size: 4vw;
 
-    }
-    #menuButton {
-        display: none;
-    }
   
     .folderContainer {
         display: flex;
@@ -433,6 +414,11 @@ nav {
         font-family: main;
         background-color: rgb(228, 228, 228);
     }
+
+    .fileText {
+        margin-left: 6vw;
+    }
+
     #ttsWindow {
         display: none;
         background-color: rgb(228, 228, 228);
@@ -449,7 +435,12 @@ nav {
     }
     #ttsContainer {
         height: 23vh;
+        margin-top: 1vh;
     }
+    #ttsTitle {
+        margin-top: 3vh;
+    }
+
     #speak {
         margin-top: 1vh;
         width: 50%;
@@ -457,6 +448,11 @@ nav {
     }
     #tTitle {
         font-size: 3.5vw;
+    }
+    #ttsX {
+        height: 1.7vw;
+        width: 1.7vw;
+        cursor: pointer;
     }
 
 
@@ -472,7 +468,6 @@ nav {
     }
 
     .fileText {
-        font-size: 3vh;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 6vw;
@@ -484,5 +479,9 @@ nav {
     #mobile {
         font-size: 4vw;
         z-index: 10;
+    }
+    #ttsX {
+        height: 2vw;
+        width: 2vw;
     }
 }

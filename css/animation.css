@@ -64,15 +64,11 @@
 }
 
 @keyframes projectWindowClose {
-    0% {
-        width: 40vw;
-        height: 40vh;
-        margin-left: 4vw;
-    }
 
-    100% {
+    to {
         width: 15px;
         height: 10px;
+        margin-top: 5vh;
         margin-left: 90vw;
 
     }
@@ -132,15 +128,8 @@
 }
 
 @keyframes contactWindowClose {
-    0% {
-        width: 40vw;
-        height: 40vh;
-        margin-left: 34vw;
-        margin-top: 40vh;
 
-    }
-
-    100% {
+    to {
         width: 15px;
         height: 10px;
         margin-top: 27vh;

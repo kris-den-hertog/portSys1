@@ -114,13 +114,17 @@ document.addEventListener("DOMContentLoaded", function () {
     tts.addEventListener("click", function () {
         if (!isTtsWindowVisible) {
             ttsWindow.style.display = "block";
+            tts.style.color = "grey";
+
         } else {
             ttsWindow.style.display = "none";
+            tts.style.color = "black";
         }
         isTtsWindowVisible = !isTtsWindowVisible;
     });
     ttsX.addEventListener("click", function () {
         ttsWindow.style.display = "none";
+        tts.style.color = "black";
         isTtsWindowVisible = false;
     });
 });
