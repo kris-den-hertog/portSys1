@@ -216,6 +216,7 @@ nav {
     resize: none;
     height: 14vh;
     border: .3vw double black;
+    border-radius: none;
     font-family: main;
     background-color: rgb(228, 228, 228);
     outline: none;
