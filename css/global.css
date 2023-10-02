@@ -485,4 +485,13 @@ nav {
         height: 2vw;
         width: 2vw;
     }
+    .projectContainer {
+       
+        width: 90%;
+        height: 25vh;
+        margin-top: 2.5vh;
+        margin-left: 5%;
+        text-align: center;
+        border: .3vw double black;
+    }
 }
