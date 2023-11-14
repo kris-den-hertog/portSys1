@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const tts = document.getElementById("tts"); 
     const ttsX = document.getElementById("ttsX");
     const ttsWindow = document.getElementById("ttsWindow"); 
+
     let isTtsWindowVisible = false;
     let isProjectWindowVisible = false;
     let isContactWindowVisible = false;
@@ -76,10 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (!isSelected) {
-                folderImg.src = "img/folderSel.png";
+                folderImg.src = "img/icons/folderSel.png";
                 folderName.classList.add("selected");
             } else {
-                folderImg.src = "img/folderNonSel.png";
+                folderImg.src = "img/icons/folderNonSel.png";
                 folderName.classList.remove("selected");
             }
             isSelected = !isSelected;
