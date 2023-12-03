@@ -3,6 +3,10 @@
     src: url(../fonts/main.ttf);
 }
 
+html, body {
+    max-width: 100%;
+    overflow: hidden;
+}
 body {
     margin: 0;
     scroll-behavior: smooth;
@@ -19,6 +23,7 @@ nav {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: solid 1px;
+    z-index: 3;
 
 }
 
@@ -150,6 +155,7 @@ a {
 
 #ttsWindow {
     display: none;
+    cursor: grab;
     background-color: rgb(228, 228, 228);
     width: 40vw;
     height: 40vh;

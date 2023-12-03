@@ -13,6 +13,16 @@
     <script src="script/file.js"> </script>
     <script src="script/background.js"> </script>
     <script src="script/tts.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#projectWindow" ).draggable({ scroll: false });
+      $( "#contactWindow" ).draggable({ scroll: false});
+      $( "#ttsWindow" ).draggable({ scroll: false});
+    } );
+     </script>
+    
 
 </head>
 <body>
@@ -49,6 +59,7 @@
                 </div>
             </div>
         </div>
+       
         <div id="ttsWindow">
             <div id="ttsX" class="x"></div>
             <div id="ttsTitle">
@@ -66,7 +77,7 @@
                 </div>
             </div>
         </div>
-
+      
         <div class="folderContainer">
             <div class="folder" id="projects">
                 <img class="folderImg" src="img/icons/folderNonSel.png">

@@ -52,14 +52,12 @@
     0% {
         width: 15px;
         height: 10px;
-        margin-left: 90vw;
     }
 
 
     100% {
         width: 40vw;
         height: 40vh;
-        margin-left: 4vw;
     }
 }
 
@@ -68,8 +66,7 @@
     to {
         width: 15px;
         height: 10px;
-        margin-top: 5vh;
-        margin-left: 90vw;
+       
 
     }
 }
@@ -78,16 +75,14 @@
     0% {
         width: 15px;
         height: 10px;
-        margin-left: 30vw;
-        margin-top: 10vh;
+      
     }
 
 
     100% {
         width: 50vw;
         height: 40vh;
-        margin-left: 5vw;
-        margin-top: 30vh;
+      
     }
 }
 
@@ -95,17 +90,12 @@
     0% {
         width: 50vw;
         height: 40vh;
-        margin-left: 5vw;
-        margin-top: 30vh;
+       
     }
 
     100% {
         width: 15px;
         height: 10px;
-        margin-left: 30vw;
-        margin-top: 10vh;
-
-
 
     }
 }
@@ -114,16 +104,14 @@
     0% {
         width: 15px;
         height: 10px;
-        margin-top: 27vh;
-        margin-left: 90vw;
+      
     }
 
 
     100% {
         width: 40vw;
         height: 40vh;
-        margin-left: 34vw;
-        margin-top: 40vh;
+       
     }
 }
 
@@ -132,8 +120,7 @@
     to {
         width: 15px;
         height: 10px;
-        margin-top: 27vh;
-        margin-left: 90vw;
+       
 
     }
 }
@@ -142,16 +129,14 @@
     0% {
         width: 15px;
         height: 10px;
-        margin-top: 10vh;
-        margin-left: 70vw;
+        
     }
 
 
     100% {
         width: 50vw;
         height: 40vh;
-        margin-top: 50vh;
-        margin-left: 45vw;
+       
     }
 }
 
@@ -159,16 +144,14 @@
     0% {
         width: 50vw;
         height: 40vh;
-        margin-top: 50vh;
-        margin-left: 45vw;
+    
 
     }
 
     100% {
         width: 15px;
         height: 10px;
-        margin-top: 10vh;
-        margin-left: 70vw;
+       
 
     }
 }
