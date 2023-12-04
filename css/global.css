@@ -445,9 +445,9 @@ a {
         display: none;
         background-color: rgb(228, 228, 228);
         width: 60vw;
-        height: 50vw;
-        margin-left: 36vw;
-        margin-top: 15vw;
+        height: 47vw;
+        margin-left: 20vw;
+        margin-top: 50vw;
         border-radius: 1px;
         position: absolute;
         border: .3vw double black;
@@ -456,7 +456,7 @@ a {
         z-index: 0;
     }
     #ttsContainer {
-        height: 33vw;
+        height: 30vw;
         margin-top: 1vh;
     }
     #ttsTitle {
@@ -525,8 +525,5 @@ a {
         margin-left: 5%;
         text-align: center;
         border: .3vw double black;
-    }
-    #ttsWindow {
-        z-index: 6;
     }
 }
