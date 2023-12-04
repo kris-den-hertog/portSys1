@@ -89,8 +89,8 @@
 
 @keyframes projectWindowCloseR {
     0% {
-        width: 50vw;
-        height: 40vh;
+        width: 60vw;
+        height: 60vh;
        
     }
 
@@ -110,8 +110,8 @@
 
 
     100% {
-        width: 40vw;
-        height: 40vh;
+        width: 60vw;
+        height: 60vh;
        
     }
 }
@@ -135,16 +135,16 @@
 
 
     100% {
-        width: 50vw;
-        height: 40vh;
+        width: 60vw;
+        height: 60vh;
        
     }
 }
 
 @keyframes contactWindowCloseR {
     0% {
-        width: 50vw;
-        height: 40vh;
+        width: 60vw;
+        height: 60vh;
     
 
     }
