@@ -81,8 +81,8 @@
 
 
     100% {
-        width: 50vw;
-        height: 40vh;
+        width: 60vw;
+        height: 60vw;
       
     }
 }
@@ -90,7 +90,7 @@
 @keyframes projectWindowCloseR {
     0% {
         width: 60vw;
-        height: 60vh;
+        height: 60vw;
        
     }
 
@@ -110,8 +110,8 @@
 
 
     100% {
-        width: 60vw;
-        height: 60vh;
+        width: 40vw;
+        height: 40vh;
        
     }
 }
@@ -136,7 +136,7 @@
 
     100% {
         width: 60vw;
-        height: 60vh;
+        height: 60vw;
        
     }
 }
@@ -144,7 +144,7 @@
 @keyframes contactWindowCloseR {
     0% {
         width: 60vw;
-        height: 60vh;
+        height: 60vw;
     
 
     }

@@ -167,6 +167,7 @@ a {
     border: 1vw double black;
     text-align: center;
     box-shadow: 1vw 1vw;
+    position: absolute;
     z-index: 0;
 }
 
@@ -443,10 +444,10 @@ a {
     #ttsWindow {
         display: none;
         background-color: rgb(228, 228, 228);
-        width: 40vw;
-        height: 37vh;
-        margin-left: 40vw;
-        margin-top: 10vh;
+        width: 60vw;
+        height: 50vw;
+        margin-left: 36vw;
+        margin-top: 15vw;
         border-radius: 1px;
         position: absolute;
         border: .3vw double black;
@@ -455,7 +456,7 @@ a {
         z-index: 0;
     }
     #ttsContainer {
-        height: 23vh;
+        height: 33vw;
         margin-top: 1vh;
     }
     #ttsTitle {
@@ -511,16 +512,21 @@ a {
     }
 
     #contactWindow {
+        margin-top: 45vh;
+        margin-left: 30vw;
         width: 60vw;
         height: 60vw;
        
     }
     .projectContainer {
         width: 90%;
-        height: 10vw;
+        height: 35vw;
         margin-top: 2.5vh;
         margin-left: 5%;
         text-align: center;
         border: .3vw double black;
+    }
+    #ttsWindow {
+        z-index: 6;
     }
 }
