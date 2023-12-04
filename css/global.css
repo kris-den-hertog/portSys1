@@ -78,6 +78,7 @@ a {
     width: auto;
     height: auto;
     text-align: center;
+    z-index: -1;
 }
 
 .folder {
@@ -126,8 +127,8 @@ a {
     background-color: rgb(228, 228, 228);
     width: 40vw;
     height: 40vh;
-    margin-left: 4vw;
-    margin-top: 6vh;
+    margin-left: 1vw;
+    margin-top: 7vh;
     border-radius: 1px;
     position: absolute;
     cursor: grab;
@@ -291,6 +292,8 @@ a {
     text-align: center;
     border: .3vw double black;
 }
+
+
 #menuWindow {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -350,6 +353,7 @@ a {
         font-weight: bolder;
         margin-left: 20px;
         font-size: 3vh;
+        margin-top: 0;
     }
 
     .backButton {
@@ -372,24 +376,25 @@ a {
     }
 
     #projectWindow {
-        width: 50vw;
-        height: 40vh;
+        width: 55vw;
+        height: 47vw;
         margin-left: 5vw;
-        margin-top: 30vh;
+        margin-top: 25vh;
         border-radius: 1px;
         position: absolute;
-        border: .3vw double black;
+        border: 2vw double black;
         text-align: center;
+        z-index: 0;
     }
 
     #contactWindow {
-        width: 50vw;
-        height: 40vh;
+        width: 55vw;
+        height: 47vw;
         margin-top: 50vh;
-        margin-left: 45vw;
+        margin-left: 36vw;
         border-radius: 1px;
         position: absolute;
-        border: .3vw double black;
+        border: 2vw double black;
         text-align: center;
     }
 
@@ -447,7 +452,7 @@ a {
         border: .3vw double black;
         text-align: center;
         box-shadow: 1vw 1vw;
-        z-index: 3;
+        z-index: 0;
     }
     #ttsContainer {
         height: 23vh;
