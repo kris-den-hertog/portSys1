@@ -505,8 +505,17 @@ a {
         height: 2vw;
         width: 2vw;
     }
-    .projectContainer {
+    #projectWindow {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    #contactWindow {
+        width: 60vw;
+        height: 60vw;
        
+    }
+    .projectContainer {
         width: 90%;
         height: 25vh;
         margin-top: 2.5vh;
