@@ -382,9 +382,13 @@ a {
     text-align: center;
   }
   #projectTitle,
-  #contactTitle {
+  #contactTitle,
+  #ttsTitle {
     width: 55vw;
     font-size: 2.7vw;
+  }
+  #menuTitle {
+    width: 100vw;
   }
   #menuButton {
     height: 3vh;
@@ -431,15 +435,9 @@ a {
     height: 30vw;
     margin-top: 1vh;
   }
-  #ttsTitle {
-    margin-top: 3vh;
-  }
   #speak {
     margin-top: 1vh;
     width: 50%;
-  }
-  #tTitle {
-    font-size: 3.5vw;
   }
   #ttsX {
     height: 1.7vw;
@@ -482,9 +480,13 @@ a {
     height: 60vw;
   }
   #projectTitle,
-  #contactTitle {
+  #contactTitle,
+  #ttsTitle {
     width: 60vw;
     font-size: 2.7vw;
+  }
+  #menuTitle {
+    width: 100vw;
   }
   .projectContainer {
     width: 90%;
