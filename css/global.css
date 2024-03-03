@@ -1,528 +1,492 @@
 @font-face {
-    font-family: main;
-    src: url(../fonts/main.ttf);
+  font-family: main;
+  src: url(../fonts/main.ttf);
+}
+html,
+body {
+  max-width: 100%;
+  overflow: hidden;
 }
 
-html, body {
-    max-width: 100%;
-    overflow: hidden;
-}
 body {
-    margin: 0;
-    scroll-behavior: smooth;
-    overflow: hidden;
-    background-color: black;
-    font-family: main;
-    cursor: url(main.cur),auto;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  background-color: black;
+  font-family: main;
+  cursor: url(main.cur), auto;
 }
 
 nav {
-    background-color: rgb(231, 229, 229);
-    width: 100%;
-    height: 5vh;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border: solid 1px;
-    z-index: 3;
-
+  background-color: rgb(231, 229, 229);
+  width: 100%;
+  height: 5vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: solid 1px;
+  z-index: 3;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 #main {
-    width: 100%;
-    height: 95vh;
-    background-image: url("../img/backgrounds/default.png");
-    cursor: url(/main.cur),auto;
+  width: 100%;
+  height: 95vh;
+  background-image: url("../img/backgrounds/default.png");
+  cursor: url(/main.cur), auto;
+}
 
-}
 #mobile {
-    display: none;
+  display: none;
 }
+
 .backButton {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #menuButton {
-    position: absolute;
-    height: 3vh;
-    width: auto;
-    margin-left: 10px;
-    margin-right: 25px;
-    margin-top: 1vh;
-    cursor: pointer;
+  position: absolute;
+  height: 3vh;
+  width: auto;
+  margin-left: 10px;
+  margin-right: 25px;
+  margin-top: 1vh;
+  cursor: pointer;
 }
 
 #linkContainer {
-    margin-left: 2vw;
+  margin-left: 2vw;
 }
 
 .link {
-    position: relative;
-    font-family: main;
-    color: black;
-    text-decoration: none;
-    font-weight: bolder;
-    margin-left: 50px;
-    font-size: 4vh;
-    vertical-align: center;
+  position: relative;
+  font-family: main;
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-left: 50px;
+  font-size: 4vh;
+  vertical-align: center;
 }
 
 .folderContainer {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    width: auto;
-    height: auto;
-    text-align: center;
-    z-index: -1;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: auto;
+  height: auto;
+  text-align: center;
+  z-index: -1;
 }
 
 .folder {
-    display: flex;
-    margin: 0;
-    position: relative;
-    flex-direction: column-reverse;
-    align-items: center;
-    float: right;
-    margin-right: 1vw;
-    cursor: pointer;
-    text-align: center;
+  display: flex;
+  margin: 0;
+  position: relative;
+  flex-direction: column-reverse;
+  align-items: center;
+  float: right;
+  margin-right: 1vw;
+  cursor: pointer;
+  text-align: center;
 }
 
 .folderImg {
-    height: 150px;
-    width: auto;
+  height: 150px;
+  width: auto;
 }
 
 .folderName {
-    position: absolute;
-    font-family: main;
-    background-color: rgb(228, 228, 228);
-    color: black;
-    padding: 8px 20px;
-    font-size: 20px;
+  position: absolute;
+  font-family: main;
+  background-color: rgb(228, 228, 228);
+  color: black;
+  padding: 8px 20px;
+  font-size: 20px;
 }
 
-.folder:hover {
-    .folderName {
-        color: white;
-        background-color: black;
-    }
+.folder:hover .folderName {
+  color: white;
+  background-color: black;
 }
 
 .folderName.selected {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
-
-
 #projectWindow {
-    display: none;
-    background-color: rgb(228, 228, 228);
-    width: 40vw;
-    height: 40vh;
-    margin-left: 1vw;
-    margin-top: 7vh;
-    border-radius: 1px;
-    position: absolute;
-    cursor: grab;
-    border: 1vw double black;
-    text-align: center;
-    box-shadow: 1vw 1vw;
-    z-index: 0;
+  display: none;
+  background-color: rgb(228, 228, 228);
+  width: 40vw;
+  height: 40vh;
+  margin-left: 1vw;
+  margin-top: 7vh;
+  border-radius: 1px;
+  position: absolute;
+  cursor: grab;
+  border: 1vw double black;
+  text-align: center;
+  box-shadow: 1vw 1vw;
+  z-index: 0;
 }
 
 #contactWindow {
-    display: none;
-    background-color: rgb(228, 228, 228);
-    width: 40vw;
-    height: 40vh;
-    margin-left: 34vw;
-    margin-top: 40vh;
-    border-radius: 1px;
-    position: absolute;
-    cursor: grab;
-    border: 1vw double black;
-    text-align: center;
-    box-shadow: 1vw 1vw;
-    z-index: 0;
+  display: none;
+  background-color: rgb(228, 228, 228);
+  width: 40vw;
+  height: 40vh;
+  margin-left: 34vw;
+  margin-top: 40vh;
+  border-radius: 1px;
+  position: absolute;
+  cursor: grab;
+  border: 1vw double black;
+  text-align: center;
+  box-shadow: 1vw 1vw;
+  z-index: 0;
 }
 
 #ttsWindow {
-    display: none;
-    cursor: grab;
-    background-color: rgb(228, 228, 228);
-    width: 40vw;
-    height: 40vh;
-    margin-left: 40vw;
-    margin-top: 10vh;
-    border-radius: 1px;
-    position: absolute;
-    border: 1vw double black;
-    text-align: center;
-    box-shadow: 1vw 1vw;
-    position: absolute;
-    z-index: 0;
+  display: none;
+  cursor: grab;
+  background-color: rgb(228, 228, 228);
+  width: 40vw;
+  height: 40vh;
+  margin-left: 40vw;
+  margin-top: 10vh;
+  border-radius: 1px;
+  position: absolute;
+  border: 1vw double black;
+  text-align: center;
+  box-shadow: 1vw 1vw;
+  position: absolute;
+  z-index: 0;
 }
 
 #ttswindow:hover {
-    z-index: 1;
+  z-index: 1;
 }
+
 #contactWindow:hover {
-    z-index: 1;
+  z-index: 1;
 }
+
 #projectWindow:hover {
-    z-index: 1;
+  z-index: 1;
 }
 
 #ttsX {
-    margin-top: .5vh;
-    margin-left: .5vh;
-    position: absolute;
-    width: 1vw;
-    height: 1vw;
-    border: .3vw double black;
-    float: left;
+  margin-top: 0.5vh;
+  margin-left: 0.5vh;
+  position: absolute;
+  width: 1vw;
+  height: 1vw;
+  border: 0.3vw double black;
+  float: left;
 }
 
 #menuWindow {
-    display: none;
-    background-color: rgb(228, 228, 228);
-    width: 40vw;
-    height: 53vh;
-    margin-left: 30vw;
-    border-radius: 1px;
-    position: absolute;
-    border: 1vw double black;
-    text-align: center;
-    z-index: 2;
+  display: none;
+  background-color: rgb(228, 228, 228);
+  width: 40vw;
+  height: 53vh;
+  margin-left: 30vw;
+  border-radius: 1px;
+  position: absolute;
+  border: 1vw double black;
+  text-align: center;
+  z-index: 2;
 }
 
 #projectTitle,
 #contactTitle,
 #menuTitle,
 #ttsTitle {
-    font-family: main;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 5%;
-    height: auto;
-    border: .5vw double black;
+  font-family: main;
+  width: 40vw;
+  height: auto;
+  border-bottom: 0.5vw double black;
 }
 
 #tts {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #textToSpeechForm {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #text {
-    width: 50%;
-    margin-left: 5%;
-    margin-top: 2.5vh;
-    resize: none;
-    height: 14vh;
-    border: .3vw double black;
-    border-radius: none;
-    font-family: main;
-    background-color: rgb(228, 228, 228);
-    outline: none;
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 2.5vh;
+  resize: none;
+  height: 14vh;
+  border: 0.3vw double black;
+  border-radius: none;
+  font-family: main;
+  background-color: rgb(228, 228, 228);
+  outline: none;
+}
+
+::-moz-placeholder {
+  font-family: main;
 }
 
 ::placeholder {
-    font-family: main;
-
+  font-family: main;
 }
 
 #speak {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-family: main;
-    height: 5vh;
-    background-color: black;
-    color: white;
-    border: .3vw double white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: main;
+  height: 5vh;
+  background-color: black;
+  color: white;
+  border: 0.3vw double white;
 }
 
 .file {
-    height: 8vh;
-    width: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    float: left;
-    margin-left: 1vw;
-    cursor: pointer;
+  height: 8vh;
+  width: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+  margin-left: 1vw;
+  cursor: pointer;
 }
 
 .fileText {
-    font-size: 3vh;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 16vw;
+  font-size: 3vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 16vw;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 10vh;
-    cursor: pointer;
-    border-bottom: .5vw double black;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10vh;
+  cursor: pointer;
+  border-bottom: 0.5vw double black;
 }
 
 .projectContainer {
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    width: 90%;
-    height: 20vh;
-    margin-top: 2.5vh;
-    margin-left: 5%;
-    text-align: center;
-    border: .3vw double black;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 90%;
+  height: 20vh;
+  margin-top: 2.5vh;
+  margin-left: 5%;
+  text-align: center;
+  border: 0.3vw double black;
 }
 
-
 #menuWindow {
-    overflow-y: scroll;
-    overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #che,
 #def,
 #gre {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 @media (max-width: 800px) {
-
-
-  
-    .folderContainer {
-        display: flex;
-        flex-direction: row;
-        float: none;
-        width: 100vw;
-        height: auto;
-        text-align: center;
-        justify-content: center;
-        position: relative;
-        z-index: 1;
-    }
-
-    .folder {
-        margin: 5vw;
-    }
-
-    #menuWindow {
-        width: 100vw;
-        height: 95vh;
-        margin: 0;
-        border: .7vw double black;
-        position: absolute;
-        top: 5vh;
-        z-index: 4;
-    }
-
-    nav {
-        z-index: 5;
-    }
-
-    #linkContainer {
-        text-align: center;
-        margin-top: 1vh;
-    }
-
-    .link {
-        position: relative;
-        font-family: main;
-        color: black;
-        text-decoration: none;
-        font-weight: bolder;
-        margin-left: 20px;
-        font-size: 3vh;
-        margin-top: 0;
-    }
-
-    .backButton {
-        font-size: 5vw;
-        text-decoration: underline;
-        cursor: pointer;
-    }
-
-    #cbg {
-        font-size: 6vw;
-        margin-top: 10vh;
-    }
-
-    .text {
-        font-size: 4vw;
-    }
-
-    #menuTitle {
-        font-size: 5vw;
-    }
-
-    #projectWindow {
-        width: 55vw;
-        height: 47vw;
-        margin-left: 5vw;
-        margin-top: 25vh;
-        border-radius: 1px;
-        position: absolute;
-        border: 2vw double black;
-        text-align: center;
-        z-index: 0;
-    }
-
-    #contactWindow {
-        width: 55vw;
-        height: 47vw;
-        margin-top: 50vh;
-        margin-left: 36vw;
-        border-radius: 1px;
-        position: absolute;
-        border: 2vw double black;
-        text-align: center;
-    }
-
-    #projectTitle,
-    #contactTitle {
-        font-family: main;
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 5%;
-        height: auto;
-        font-size: 2.7vw;
-        border: .3vw double black;
-    }
-
-    #menuButton {
-        height: 3vh;
-        width: auto;
-        float: left;
-
-        cursor: pointer;
-    }
-    #textToSpeechForm {
-        display: flex;
-        flex-direction: column;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    
-    #text {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-        resize: none;
-        height: 14vh;
-        border: .3vw double black;
-        font-family: main;
-        background-color: rgb(228, 228, 228);
-    }
-
-    .fileText {
-        margin-left: 6vw;
-    }
-
-    #ttsWindow {
-        display: none;
-        background-color: rgb(228, 228, 228);
-        width: 60vw;
-        height: 47vw;
-        margin-left: 20vw;
-        margin-top: 50vw;
-        border-radius: 1px;
-        position: absolute;
-        border: .3vw double black;
-        text-align: center;
-        box-shadow: 1vw 1vw;
-        z-index: 0;
-    }
-    #ttsContainer {
-        height: 30vw;
-        margin-top: 1vh;
-    }
-    #ttsTitle {
-        margin-top: 3vh;
-    }
-
-    #speak {
-        margin-top: 1vh;
-        width: 50%;
-       
-    }
-    #tTitle {
-        font-size: 3.5vw;
-    }
-    #ttsX {
-        height: 1.7vw;
-        width: 1.7vw;
-        cursor: pointer;
-    }
-
-
+  .folderContainer {
+    display: flex;
+    flex-direction: row;
+    float: none;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  .folder {
+    margin: 5vw;
+  }
+  #menuWindow {
+    width: 100vw;
+    height: 95vh;
+    margin: 0;
+    border: 0.7vw double black;
+    position: absolute;
+    top: 5vh;
+    z-index: 4;
+  }
+  nav {
+    z-index: 5;
+  }
+  #linkContainer {
+    text-align: center;
+    margin-top: 1vh;
+  }
+  .link {
+    position: relative;
+    font-family: main;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-left: 20px;
+    font-size: 3vh;
+    margin-top: 0;
+  }
+  .backButton {
+    font-size: 5vw;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  #cbg {
+    font-size: 6vw;
+    margin-top: 10vh;
+  }
+  .text {
+    font-size: 4vw;
+  }
+  #menuTitle {
+    font-size: 5vw;
+  }
+  #projectWindow {
+    width: 55vw;
+    height: 47vw;
+    margin-left: 5vw;
+    margin-top: 25vh;
+    border-radius: 1px;
+    position: absolute;
+    border: 2vw double black;
+    text-align: center;
+    z-index: 0;
+  }
+  #contactWindow {
+    width: 55vw;
+    height: 47vw;
+    margin-top: 50vh;
+    margin-left: 36vw;
+    border-radius: 1px;
+    position: absolute;
+    border: 2vw double black;
+    text-align: center;
+  }
+  #projectTitle,
+  #contactTitle {
+    width: 55vw;
+    font-size: 2.7vw;
+  }
+  #menuButton {
+    height: 3vh;
+    width: auto;
+    float: left;
+    cursor: pointer;
+  }
+  #textToSpeechForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #text {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    resize: none;
+    height: 14vh;
+    border: 0.3vw double black;
+    font-family: main;
+    background-color: rgb(228, 228, 228);
+  }
+  .fileText {
+    margin-left: 6vw;
+  }
+  #ttsWindow {
+    display: none;
+    background-color: rgb(228, 228, 228);
+    width: 60vw;
+    height: 47vw;
+    margin-left: 20vw;
+    margin-top: 50vw;
+    border-radius: 1px;
+    position: absolute;
+    border: 0.3vw double black;
+    text-align: center;
+    box-shadow: 1vw 1vw;
+    z-index: 0;
+  }
+  #ttsContainer {
+    height: 30vw;
+    margin-top: 1vh;
+  }
+  #ttsTitle {
+    margin-top: 3vh;
+  }
+  #speak {
+    margin-top: 1vh;
+    width: 50%;
+  }
+  #tTitle {
+    font-size: 3.5vw;
+  }
+  #ttsX {
+    height: 1.7vw;
+    width: 1.7vw;
+    cursor: pointer;
+  }
 }
-
 @media (max-width: 500px) {
-    .link {
-        font-size: 2vh;
-    }
-
-    #linkContainer {
-        margin-top: 1.5vh;
-    }
-
-    .fileText {
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 6vw;
-        font-size: 2vh;
-    }
-    #tTitle {
-        font-size: 3vw;
-    }
-    #mobile {
-        font-size: 4vw;
-        z-index: 10;
-    }
-    #ttsX {
-        height: 2vw;
-        width: 2vw;
-    }
-    #projectWindow {
-        width: 60vw;
-        height: 60vw;
-    }
-
-    #contactWindow {
-        margin-top: 45vh;
-        margin-left: 30vw;
-        width: 60vw;
-        height: 60vw;
-       
-    }
-    .projectContainer {
-        width: 90%;
-        height: 35vw;
-        margin-top: 2.5vh;
-        margin-left: 5%;
-        text-align: center;
-        border: .3vw double black;
-    }
-}
+  .link {
+    font-size: 2vh;
+  }
+  #linkContainer {
+    margin-top: 1.5vh;
+  }
+  .fileText {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 6vw;
+    font-size: 2vh;
+  }
+  #tTitle {
+    font-size: 3vw;
+  }
+  #mobile {
+    font-size: 4vw;
+    z-index: 10;
+  }
+  #ttsX {
+    height: 2vw;
+    width: 2vw;
+  }
+  #projectWindow {
+    width: 60vw;
+    height: 60vw;
+  }
+  #contactWindow {
+    margin-top: 45vh;
+    margin-left: 30vw;
+    width: 60vw;
+    height: 60vw;
+  }
+  .projectContainer {
+    width: 90%;
+    height: 35vw;
+    margin-top: 2.5vh;
+    margin-left: 5%;
+    text-align: center;
+    border: 0.3vw double black;
+  }
+}/*# sourceMappingURL=global.css.map */
