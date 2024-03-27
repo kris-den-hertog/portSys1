@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bfr0jpk.css">
     <title>Portfolio - Kris den Hertog</title>
     <link rel="icon" href="img/icons/kdevlog.jpg" type="image/jpg">
     <meta name="description" content="Portfolio System 1" />
@@ -12,14 +13,13 @@
     <script src="script/folder.js"> </script>
     <script src="script/file.js"> </script>
     <script src="script/background.js"> </script>
-    <script src="script/tts.js"> </script>
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
     $( function() {
       $( "#projectWindow" ).draggable({ grid: [20, 20], scroll: false });
       $( "#contactWindow" ).draggable({ grid: [20, 20], scroll: false });
-      $( "#ttsWindow" ).draggable({ grid: [20, 20], scroll: false } );
     } );
      </script>
     
@@ -29,53 +29,41 @@
     <nav>
         <img class="menu" id="menuButton" src="img/icons/menu.png"> 
         <div id="linkContainer">
+            <a href="https://github.com/kris-den-hertog" target="_blank" class="link">GitHub</a>
             <a href="https://www.linkedin.com/in/kris-den-hertog-6946b7257/" target="_blank" class="link">LinkedIn</a>
-            <a href="https://twitter.com/CEO_of_weekend" target="_blank" class="link">X (twitter)</a>
-            <a href="https://www.instagram.com/ceo_of_weekend/" target="_blank" class="link">Instagram</a>
+            <a href="https://twitter.com/CEO_of_weekend" target="_blank" class="link">X (Twitter)</a>
         </div>
-   
+        <p id="date">  <script type="py" src="./script/main.py"></script></p>
+
     </nav>
     <main id="main">
         <div id="projectWindow">
             <div id="projectTitle">
-                <h1 class="title">Projects folder</h1>
-            </div>
+                <h1 class="title">Projects</h1>
+            </div> 
             <div  class="projectContainer" id="projectContainer">
-                <a href="https://github.com/kris-den-hertog/Medisch-leerfonds" target="_blank"><div id="pf" class="row"><img src="img/icons/textFile.png" class="file"><p class="fileText">MLF</p></div></a>
-                <a href="https://github.com/kris-den-hertog/portSys1" target="_blank"><div id="pf" class="row"><img src="img/icons/textFile.png" class="file"><p class="fileText">Portfolio</p></div></a>
-                <a href="https://github.com/kris-den-hertog/frenchcore---fixed--" target="_blank"><div id="fc" class="row"><img src="img/icons/textFile.png" class="file"><p class="fileText">Frenchcore.com</p></div></a>
-               <a href="https://github.com/kris-den-hertog/delaypaymobile" target="_blank"> <div id="dp" class="row"><img src="img/icons/textFile.png" class="file"><p class="fileText">Delaypay</p></div></a>
-                
+                <a href="./files/web.html"><div class="folderWindow">
+                    <img src="./img/icons/folderNonSel.png">
+                    <p>Development</p>
+                </div></a>
             </div>
         </div>
 
         <div id="contactWindow">
             <div id="contactTitle">
-                <h1 class="title">About me folder</h1>
+                <h1 class="title">About me</h1>
             </div>
             <div class="projectContainer" id="contactContainer">
-                <a href="https://github.com/kris-den-hertog" target="_blank"><div id="gh" class="row"><img src="img/icons/textFile.png" class="file"><p class="fileText">Github</p></div></a>
+                <a href="#"><div class="folderWindow">
+                    <img src="./img/icons/folderNonSel.png">
+                    <p>CV</p>
+                </div></a>
+        
+   
                 </div>
             </div>
         </div>
        
-        <div id="ttsWindow">
-            <div id="ttsX" class="x"></div>
-            <div id="ttsTitle">
-                <h1 class="title" id="tTitle">Text To Speech</h1>
-            </div>
-            <div class="projectContainer" id="ttsContainer">
-                <form id="textToSpeechForm">
-                    <textarea id="text" name="text" placeholder="hello world">
-
-                    </textarea>
-                   
-                    <button type="submit" id="speak">Speak</button>
-                </form>
-               
-                </div>
-            </div>
-        </div>
       
         <div class="folderContainer">
             <div class="folder" id="projects">
@@ -109,12 +97,8 @@
                     <p class="backButton" id="hd">Hearts (dark)</p>
                     <p class="backButton" id="che">Checkers</p>
                     <p class="backButton" id="gre">Grey</p>
-
                 </div>
-                <div id="menuBot">
-                    <p id="cbg">Finder:</p>
-                    <p class="backButton" id="tts">Text To Speech</p>
-                </div>
+               
             </div>
         </div>
     </main>

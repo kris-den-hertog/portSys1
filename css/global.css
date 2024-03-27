@@ -13,8 +13,6 @@ body {
   scroll-behavior: smooth;
   overflow: hidden;
   background-color: black;
-  font-family: main;
-  cursor: url(main.cur), auto;
 }
 
 nav {
@@ -25,6 +23,57 @@ nav {
   border-top-right-radius: 10px;
   border: solid 1px;
   z-index: 3;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  nav {
+    text-align: center;
+  }
+}
+
+#date {
+  display: flex;
+  margin-left: auto;
+  margin-right: 10px;
+  font-family: "bodoni-pt-variable", sans-serif;
+  font-variation-settings: "opsz" 10, "wght" 400;
+  font-size: 20px;
+}
+@media (max-width: 500px) {
+  #date {
+    font-size: 15px;
+  }
+}
+
+.link {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-left: 50px;
+  font-size: 4vh;
+  vertical-align: center;
+  font-family: "bodoni-pt-variable", sans-serif;
+  font-variation-settings: "opsz" 10, "wght" 400;
+  font-size: 3vh;
+}
+@media (max-width: 700px) {
+  .link {
+    margin-left: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .link {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .link {
+    font-size: 15px;
+    margin-left: 10px;
+  }
 }
 
 a {
@@ -53,23 +102,16 @@ a {
   width: auto;
   margin-left: 10px;
   margin-right: 25px;
-  margin-top: 1vh;
   cursor: pointer;
 }
 
 #linkContainer {
   margin-left: 2vw;
 }
-
-.link {
-  position: relative;
-  font-family: main;
-  color: black;
-  text-decoration: none;
-  font-weight: bolder;
-  margin-left: 50px;
-  font-size: 4vh;
-  vertical-align: center;
+@media (max-width: 700px) {
+  #linkContainer {
+    margin-left: 30px;
+  }
 }
 
 .folderContainer {
@@ -80,6 +122,14 @@ a {
   height: auto;
   text-align: center;
   z-index: -1;
+}
+@media (max-width: 700px) {
+  .folderContainer {
+    flex-direction: row;
+    margin: 0;
+    width: 100vw;
+    justify-content: center;
+  }
 }
 
 .folder {
@@ -101,11 +151,12 @@ a {
 
 .folderName {
   position: absolute;
-  font-family: main;
+  font-family: "bodoni-pt-variable", sans-serif;
+  font-variation-settings: "opsz" 10, "wght" 200;
+  font-size: 20px;
   background-color: rgb(228, 228, 228);
   color: black;
   padding: 8px 20px;
-  font-size: 20px;
 }
 
 .folder:hover .folderName {
@@ -133,6 +184,14 @@ a {
   box-shadow: 1vw 1vw;
   z-index: 0;
 }
+@media (max-width: 700px) {
+  #projectWindow {
+    width: 60vw;
+    height: 60vw;
+    margin-top: 25vh;
+    border: 2vw double black;
+  }
+}
 
 #contactWindow {
   display: none;
@@ -149,26 +208,13 @@ a {
   box-shadow: 1vw 1vw;
   z-index: 0;
 }
-
-#ttsWindow {
-  display: none;
-  cursor: grab;
-  background-color: rgb(228, 228, 228);
-  width: 40vw;
-  height: 40vh;
-  margin-left: 40vw;
-  margin-top: 10vh;
-  border-radius: 1px;
-  position: absolute;
-  border: 1vw double black;
-  text-align: center;
-  box-shadow: 1vw 1vw;
-  position: absolute;
-  z-index: 0;
-}
-
-#ttswindow:hover {
-  z-index: 1;
+@media (max-width: 700px) {
+  #contactWindow {
+    width: 60vw;
+    height: 60vw;
+    margin-top: 45vh;
+    border: 2vw double black;
+  }
 }
 
 #contactWindow:hover {
@@ -177,16 +223,6 @@ a {
 
 #projectWindow:hover {
   z-index: 1;
-}
-
-#ttsX {
-  margin-top: 0.5vh;
-  margin-left: 0.5vh;
-  position: absolute;
-  width: 1vw;
-  height: 1vw;
-  border: 0.3vw double black;
-  float: left;
 }
 
 #menuWindow {
@@ -200,20 +236,35 @@ a {
   border: 1vw double black;
   text-align: center;
   z-index: 2;
+  font-size: 2vh;
+}
+@media (max-width: 700px) {
+  #menuWindow {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
 }
 
 #projectTitle,
 #contactTitle,
 #menuTitle,
 #ttsTitle {
-  font-family: main;
+  font-family: "bodoni-pt-variable", sans-serif;
+  font-variation-settings: "opsz" 10, "wght" 400;
+  font-size: 2.5vh;
   width: 40vw;
   height: auto;
   border-bottom: 0.5vw double black;
 }
-
-#tts {
-  cursor: pointer;
+@media (max-width: 700px) {
+  #projectTitle,
+  #contactTitle,
+  #menuTitle,
+  #ttsTitle {
+    width: 100%;
+    border-bottom: 1vw double black;
+  }
 }
 
 #textToSpeechForm {
@@ -229,29 +280,11 @@ a {
   height: 14vh;
   border: 0.3vw double black;
   border-radius: none;
-  font-family: main;
+  font-family: "bodoni-pt-variable", sans-serif;
+  font-variation-settings: "opsz" 10, "wght" 400;
+  font-size: 20px;
   background-color: rgb(228, 228, 228);
   outline: none;
-}
-
-::-moz-placeholder {
-  font-family: main;
-}
-
-::placeholder {
-  font-family: main;
-}
-
-#speak {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-family: main;
-  height: 5vh;
-  background-color: black;
-  color: white;
-  border: 0.3vw double white;
 }
 
 .file {
@@ -271,26 +304,42 @@ a {
   margin-left: 16vw;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 10vh;
+.folderWindow {
+  height: 10vw;
+  width: 10vw;
+  margin: 0;
   cursor: pointer;
-  border-bottom: 0.5vw double black;
+}
+.folderWindow img {
+  width: 10vw;
+  height: auto;
+  margin-bottom: -2.5vw;
+}
+.folderWindow p {
+  margin: 0;
+}
+@media (max-width: 500px) {
+  .folderWindow {
+    height: 20vw;
+    width: 20vw;
+  }
+  .folderWindow img {
+    width: 15vw;
+    height: auto;
+  }
+  .folderWindow p {
+    margin-top: 0;
+  }
 }
 
 .projectContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   overflow-y: scroll;
   overflow-x: hidden;
-  width: 90%;
-  height: 20vh;
-  margin-top: 2.5vh;
-  margin-left: 5%;
+  width: 100%;
+  height: 25vh;
   text-align: center;
-  border: 0.3vw double black;
 }
 
 #menuWindow {
@@ -302,198 +351,4 @@ a {
 #def,
 #gre {
   cursor: pointer;
-}
-
-@media (max-width: 800px) {
-  .folderContainer {
-    display: flex;
-    flex-direction: row;
-    float: none;
-    width: 100vw;
-    height: auto;
-    text-align: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-  }
-  .folder {
-    margin: 5vw;
-  }
-  #menuWindow {
-    width: 100vw;
-    height: 95vh;
-    margin: 0;
-    border: 0.7vw double black;
-    position: absolute;
-    top: 5vh;
-    z-index: 4;
-  }
-  nav {
-    z-index: 5;
-  }
-  #linkContainer {
-    text-align: center;
-    margin-top: 1vh;
-  }
-  .link {
-    position: relative;
-    font-family: main;
-    color: black;
-    text-decoration: none;
-    font-weight: bolder;
-    margin-left: 20px;
-    font-size: 3vh;
-    margin-top: 0;
-  }
-  .backButton {
-    font-size: 5vw;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  #cbg {
-    font-size: 6vw;
-    margin-top: 10vh;
-  }
-  .text {
-    font-size: 4vw;
-  }
-  #menuTitle {
-    font-size: 5vw;
-  }
-  #projectWindow {
-    width: 55vw;
-    height: 47vw;
-    margin-left: 5vw;
-    margin-top: 25vh;
-    border-radius: 1px;
-    position: absolute;
-    border: 2vw double black;
-    text-align: center;
-    z-index: 0;
-  }
-  #contactWindow {
-    width: 55vw;
-    height: 47vw;
-    margin-top: 50vh;
-    margin-left: 36vw;
-    border-radius: 1px;
-    position: absolute;
-    border: 2vw double black;
-    text-align: center;
-  }
-  #projectTitle,
-  #contactTitle,
-  #ttsTitle {
-    width: 55vw;
-    font-size: 2.7vw;
-  }
-  #menuTitle {
-    width: 100vw;
-  }
-  #menuButton {
-    height: 3vh;
-    width: auto;
-    float: left;
-    cursor: pointer;
-  }
-  #textToSpeechForm {
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  #text {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    resize: none;
-    height: 14vh;
-    border: 0.3vw double black;
-    font-family: main;
-    background-color: rgb(228, 228, 228);
-  }
-  .fileText {
-    margin-left: 6vw;
-  }
-  #ttsWindow {
-    display: none;
-    background-color: rgb(228, 228, 228);
-    width: 60vw;
-    height: 47vw;
-    margin-left: 20vw;
-    margin-top: 50vw;
-    border-radius: 1px;
-    position: absolute;
-    border: 0.3vw double black;
-    text-align: center;
-    box-shadow: 1vw 1vw;
-    z-index: 0;
-  }
-  #ttsContainer {
-    height: 30vw;
-    margin-top: 1vh;
-  }
-  #speak {
-    margin-top: 1vh;
-    width: 50%;
-  }
-  #ttsX {
-    height: 1.7vw;
-    width: 1.7vw;
-    cursor: pointer;
-  }
-}
-@media (max-width: 500px) {
-  .link {
-    font-size: 2vh;
-  }
-  #linkContainer {
-    margin-top: 1.5vh;
-  }
-  .fileText {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 6vw;
-    font-size: 2vh;
-  }
-  #tTitle {
-    font-size: 3vw;
-  }
-  #mobile {
-    font-size: 4vw;
-    z-index: 10;
-  }
-  #ttsX {
-    height: 2vw;
-    width: 2vw;
-  }
-  #projectWindow {
-    width: 60vw;
-    height: 60vw;
-  }
-  #contactWindow {
-    margin-top: 45vh;
-    margin-left: 30vw;
-    width: 60vw;
-    height: 60vw;
-  }
-  #projectTitle,
-  #contactTitle,
-  #ttsTitle {
-    width: 60vw;
-    font-size: 2.7vw;
-  }
-  #menuTitle {
-    width: 100vw;
-  }
-  .projectContainer {
-    width: 90%;
-    height: 35vw;
-    margin-top: 2.5vh;
-    margin-left: 5%;
-    text-align: center;
-    border: 0.3vw double black;
-  }
 }/*# sourceMappingURL=global.css.map */
